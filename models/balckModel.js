@@ -36,9 +36,6 @@ const dashboarads = new mongoose.Schema({
     type: String,
     require: true,
   },
-  topic: {
-    type: String,
-    require: true,
-  },
+ 
 });
 module.exports = mongoose.model("dashboarads",dashboarads);
