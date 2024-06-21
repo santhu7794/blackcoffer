@@ -20,7 +20,7 @@ const dashboarads = new mongoose.Schema({
     type: String,
     require: true,
   },
-  Topics: {
+  Topic: {
     type: String,
     require: true,
   },
