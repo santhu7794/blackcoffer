@@ -1,41 +1,49 @@
 const mongoose = require('mongoose');
 const dashboarads = new mongoose.Schema({
-  Intensity: {
+  _id:{
+    type:String,
+    require: true,
+  },
+  intensity: {
     type: String,
     require: true,
   },
-  Likelihood: {
+  likelihood: {
     type: String,
     require: true,
   },
-  Relevance: {
+  relevance: {
     type: String,
     require: true,
   },
-  Year: {
+  start_year: {
     type: String,
     require: true,
   },
-  Country: {
+  end_year: {
     type: String,
     require: true,
   },
-  Topic: {
+  country: {
     type: String,
     require: true,
   },
-  Region: {
+  topic: {
     type: String,
     require: true,
   },
-  City: {
+  region: {
+    type: String,
+    require: true,
+  },
+  city: {
     type: String,
     require: true,
   },
   published: {
     type: String,
     require: true,
-  },
+  }
  
 });
 module.exports = mongoose.model("dashboarads",dashboarads);
