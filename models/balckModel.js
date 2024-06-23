@@ -43,6 +43,18 @@ const dashboarads = new mongoose.Schema({
   published: {
     type: String,
     require: true,
+  },
+  sector:{
+    type:String,
+    require:true,
+  },
+  pestle:{
+    type:String,
+    require:true,
+  },
+  source:{
+    type:String,
+    require:true,
   }
  
 });
