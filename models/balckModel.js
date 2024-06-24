@@ -1,9 +1,6 @@
 const mongoose = require('mongoose');
 const dashboarads = new mongoose.Schema({
-  _id:{
-    type:String,
-    require: true,
-  },
+  
   intensity: {
     type: String,
     require: true,
