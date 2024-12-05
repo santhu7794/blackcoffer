@@ -4,7 +4,7 @@ const route = express.Router();
 const cors = require("cors");
 
 let corsOptions = {
-  orgin: ["http://localhost:4200"],
+  orgin: ["http://localhost:4400"],
 };
 route.post("/addadmin", cors(corsOptions), (req, res) => {
   const a = new admin(req.body);

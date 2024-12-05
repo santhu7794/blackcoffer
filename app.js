@@ -7,9 +7,9 @@ app.use(express.json());
 const cors = require("cors");
 app.use(cors());
 let corsOptions = {
-  orgin: ["http://localhost:4200"],
+  orgin: ["http://localhost:4400"],
 };
-const port = 4200;
+const port = 4400;
 url = "mongodb://localhost:27017/Mydatabase";
 app.listen(port, () => {
   console.log("server is running", port);

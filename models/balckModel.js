@@ -1,38 +1,27 @@
 const mongoose = require('mongoose');
 const dashboarads = new mongoose.Schema({
-  Intensity: {
+  
+  intensity: {
     type: String,
     require: true,
   },
-  Likelihood: {
+  likelihood: {
     type: String,
     require: true,
   },
-  Relevance: {
+  relevance: {
     type: String,
     require: true,
   },
-  Year: {
+  start_year: {
     type: String,
     require: true,
   },
-  Country: {
+  end_year: {
     type: String,
     require: true,
   },
-  Topics: {
-    type: String,
-    require: true,
-  },
-  Region: {
-    type: String,
-    require: true,
-  },
-  City: {
-    type: String,
-    require: true,
-  },
-  published: {
+  country: {
     type: String,
     require: true,
   },
@@ -40,5 +29,30 @@ const dashboarads = new mongoose.Schema({
     type: String,
     require: true,
   },
+  region: {
+    type: String,
+    require: true,
+  },
+  city: {
+    type: String,
+    require: true,
+  },
+  published: {
+    type: String,
+    require: true,
+  },
+  sector:{
+    type:String,
+    require:true,
+  },
+  pestle:{
+    type:String,
+    require:true,
+  },
+  source:{
+    type:String,
+    require:true,
+  }
+ 
 });
 module.exports = mongoose.model("dashboarads",dashboarads);
